@@ -1,0 +1,76 @@
+<h1>Locadora de Carros</h1>
+<form action="/users/save" method="post">
+
+  <div class="row">
+    <div class="col-3">
+      <label class="form-label">ID:</label>
+      <input type="number" name="id" class="form-control" aria-label="id" disabled placeholder="12">
+    </div>    
+  </div>
+
+  <div class="row">
+    <div class="col-6">
+      <label class="form-label">Cliente:</label>
+      <input type="text" name="nome" class="form-control" aria-label="cliente">
+    </div>    
+  </div>
+
+  <div class="row">
+    <div class="col-6">
+      <label class="form-label">Endereço:</label>
+      <input type="text" name="endereco" class="form-control" aria-label="endereco">
+    </div>    
+  </div>
+
+  <div class="row">
+    <div class="col">
+      <label class="form-label">Cod Veic:</label>
+      <input type="number" name="cod" class="form-control" aria-label="cod">
+    </div>
+    <div class="col">
+      <label class="form-label">Ano:</label>
+      <input type="number" name="ano" class="form-control" aria-label="ano">
+    </div>
+    <div class="col">
+      <label class="form-label">Num dias:</label>
+      <input type="number" name="numDias" class="form-control" aria-label="dias">
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col">
+      <label class="form-label">Marca:</label>
+      <input type="text" name="marca" class="form-control" aria-label="marca">
+    </div>
+    <div class="col">
+      <label class="form-label">Cor:</label>
+      <input type="text" name="cor" class="form-control" aria-label="cor">
+    </div>
+    <div class="col">
+      <label class="form-label">Modelo:</label>
+      <input type="text" name="modelo" class="form-control" aria-label="modelo">
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col">
+      <label class="form-label">Data Saída:</label>
+      <input type="date" name="dataSaida" class="form-control" aria-label="dataSaida">
+    </div>
+    <div class="col">
+      <label class="form-label">Data Entrega:</label>
+      <input type="date" name="dataEntrega" class="form-control" aria-label="dataEntrega">
+    </div>
+    <div class="col">
+      <label class="form-label">Total R$:</label>
+      <input type="number" class="form-control" aria-label="Total" disabled>
+    </div>
+  </div>
+
+  <div class="botoes">
+    <a href="/" class="btn">Voltar</a>
+    {{!-- <a href="/users/add" class="btn">Registrar Aluguel</a> --}}
+    <input type="submit" value="Registrar Aluguel" class="btn">
+  </div>
+
+</form>
